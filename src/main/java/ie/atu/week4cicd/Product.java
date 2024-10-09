@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
+
     @NotBlank(message="You must enter a name")
     private String name;
     @Min(value=1, message="Must be greater or equal to 1")

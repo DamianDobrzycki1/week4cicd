@@ -9,12 +9,10 @@ import java.util.List;
 public class ProductController {
     List<Product> productList = new ArrayList<>();
 
-    @GetMapping("/getProducts")
-    public List<Product> getProducts()
-    {
+    @GetMapping("/getProduct")
+    public List<Product> getProducts() {
         return productList;
     }
-
     @PostMapping("/addProduct")
     public List<Product> addProduct(@RequestBody Product product)
     {
